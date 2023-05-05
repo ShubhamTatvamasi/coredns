@@ -26,3 +26,10 @@ Revert changes:
 ```bash
 sed "s/${LOCAL_IP}/8.8.8.8/g" -i docker-compose.yml
 ```
+
+Test your DNS resolution:
+```bash
+host nginx.shubham.local 192.168.1.16
+```
+> `192.168.1.16` is the DNS server IP.
+
